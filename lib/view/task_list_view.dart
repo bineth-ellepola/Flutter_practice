@@ -20,6 +20,8 @@ class TaskListView extends StatelessWidget {
             title: Text(
               task.title,
               style: TextStyle(
+                color: task.isCompleted ? const Color.fromARGB(255, 158, 158, 158) : Colors.black,
+                
                 decoration:
                     task.isCompleted ? TextDecoration.lineThrough : null,
               ),

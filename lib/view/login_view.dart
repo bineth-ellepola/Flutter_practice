@@ -14,10 +14,18 @@ class LoginView extends StatelessWidget {
           children: [
             const Text(
               'Task Manager',
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold,
+               color: Colors.blue),
             ),
             const SizedBox(height: 40),
+
+
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                textStyle: const TextStyle(fontSize: 18), 
+                 backgroundColor: const Color.fromARGB(255, 22, 42, 131),
+              ) ,
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
